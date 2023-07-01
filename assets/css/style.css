@@ -1,0 +1,428 @@
+/* *** *** *** *** *** *** *** *** *** Css rest *** *** *** *** *** *** *** *** ***  */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* *** *** *** *** *** *** *** *** *** Font Style *** *** *** *** *** *** *** *** ***  */
+@font-face {
+    font-family: dana;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../font/Dana/woff2/Dana-Medium.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+        url('../font/Dana/woff/Dana-Medium.woff') format('woff');
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    }
+    
+    @font-face {
+        font-family: dana-bold;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../font/Dana/woff2/Dana-Bold.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+    url('../font/Dana/woff/Dana-Bold.woff') format('woff');
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+@font-face {
+    font-family: AGENCYB;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/AGENCYB/woff/AGENCYB.woff') format('woff'),
+    url('../font/AGENCYB/woff2/AGENCYB.woff2') format('woff2');
+}
+
+:root {
+    font-size: 62.5%;
+}
+/* *** *** *** *** *** *** *** *** *** Main Style *** *** *** *** *** *** *** *** ***  */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: no-repeat url(../img/bg1.png);
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    width: 80vw;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+}
+
+/* *** *** *** *** *** *** *** *** *** content Style *** *** *** *** *** *** *** *** ***  */
+section.content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+/* *** techno-about *** */
+section.techno-about {
+    background-color: #fff;
+    margin: 5rem 2rem 0 2rem;
+    padding: 3rem;
+    position: relative;
+}
+
+/* *** icon style *** */
+div.title span,
+div.email span,
+div.call span {
+    height: 100%;
+    width: calc(3rem + 1vw);
+    border-radius: 0px 7px 7px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title span {
+    background-color: #69D9C8 !important;
+}
+
+div.email span,
+div.call span {
+    background-color: #F495AF !important;
+    border-radius: 7px 0px 0px 7px;
+}
+
+/* *** form para *** */
+div.title p,
+div.email p,
+div.call p {
+    font-family: dana-bold;
+    font-size: calc(.4rem + 0.66667vw);
+}
+
+div.title p {
+    padding-right: 1rem;
+    border-radius: 7px 0px 0px 7px;
+}
+
+div.email p,
+div.call p {
+    display: flex;
+    align-items: center;
+    background-color: #C19ED6;
+    height: 100%;
+    width: 12vw;
+    padding-left: 1rem;
+    /* font-weight: bold; */
+    border-radius: 0px 7px 7px 0px;
+}
+
+a {
+    color: #000;
+}
+
+/* *** title *** */
+div.title {
+    /* padding: 17px 27px 17px 27px; */
+    margin-bottom: 2.5rem;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 31.1vw;
+    background-color: #D1D4F7;
+    border-radius: 0px 7px 7px 0px;
+}
+
+div.list {
+    display: flex;
+    /* justify-content: ; */
+}
+
+/* *** LOGO *** */
+div.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3D5EF;
+    width: 14vw;
+    height: 26vh;
+    border-radius: 10px;
+    /* padding: 2rem; */
+}
+
+div.logo img {
+    padding-top: 3.3rem;
+    width: 100%;
+    height: 27vh;
+}
+
+/* *** about *** */
+div.about {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin-left: calc(1rem + 1vw);
+}
+
+div.email,
+div.call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    min-width: 16vw;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+div.email span svg {
+    transform: rotate(-35deg);
+}
+
+div.call2 {
+    margin: 0 !important;
+}
+
+/* *** techno-coming" *** */
+section.techno-coming {
+    /* margin-left: 2rem; */
+    padding-left: 2rem;
+    /* display: flex; */
+    text-align: center;
+}
+
+section.techno-coming h1 {
+    color: white;
+    font-size: calc(20px + 2vw);
+    font-family: AGENCYB;
+}
+
+section.techno-coming h1 span {
+    text-align: center;
+}
+
+/* *** footer *** */
+footer {
+    text-decoration: rtl;
+    position: absolute;
+    font-family: yekanbakh;
+    /* position: fixed; */
+    right: 1.5rem;
+    bottom: 3rem;
+}
+
+footer p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    color: white;
+    vertical-align: 1rem;
+}
+
+footer p span {
+    background-color: #F5C245;
+    padding: 0.6rem;
+    color: #000;
+    border-radius: 10px 0px 10px 0px;
+    margin: 1rem 2rem 0rem 1rem;
+}
+/* *** animation robot *** */
+
+section.techno-about::after {
+    position: absolute;
+    content: "";
+    background: url(../img/Group\ 25.png);
+    background-size: 120px 170px;
+    width: 120px;
+    height: 170px;
+    bottom: -11rem;
+    left: -4rem;
+    z-index: 99;
+    animation: both robot 2s infinite;
+    animation-timing-function: steps(2, jump-none);
+    animation-fill-mode: forwards;
+}
+
+@keyframes robot {
+    100% {
+        background: url(../img/Group\ 24.png);
+        background-size: 120px 170px;
+    }
+
+}
+
+section.techno-about::before {
+    content: "";
+    background: url(../img/Group\ 30.png);
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -14rem;
+    right: -4rem;
+    z-index: 99;
+    animation: both robot1 2s infinite;
+    animation-timing-function: steps(2, jump-none);
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes robot1 {
+    100% {
+        background: url(../img/Group\ 31.png);
+        background-size: 150px 150px;
+    }
+}
+
+/* *** media screen pc:1206px *** */
+@media screen and (max-width : 1206px) {
+    div.title {
+        /* padding: 17px 27px 17px 27px; */
+        width: 31.7vw;
+    }
+}
+
+/* *** media screen tablet:1000px *** */
+@media screen and (max-width : 1000px) {
+    main {
+        height: 90vh;
+        width: 95%;
+        justify-content: flex-start;
+    }
+
+    div.title {
+        margin-bottom: 2rem;
+        min-width: 42rem;
+    }
+
+    div.title p , div.email p,
+    div.call p {
+        font-size: 1.4rem;
+    }
+
+    section.content {
+        /* justify-content: flex-start; */
+        flex-direction: column-reverse !important;
+    }
+
+    section.techno-coming {
+        margin-top: 2rem;
+        padding-left: 0;
+    }
+
+    section.techno-about {
+        margin: 5rem 0rem;
+    }
+
+    div.logo {
+        min-width: 19rem;
+        height: 24.2vh;
+    }
+
+    div.email,
+    div.call {
+        margin-bottom: 1.2rem;
+    }
+
+    div.email p,
+    div.call p {
+        min-width: 17rem;
+    }
+
+    div.logo img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+
+}
+/* *** media screen phone:700px *** */
+@media screen and (max-width : 700px) {
+    footer p {
+        text-align: end;
+    }
+
+    footer p span {
+        margin: 1rem 2rem 0rem 0.5rem;
+    }
+
+    footer {
+        right: 0rem;
+        bottom: 2rem;
+    }
+}
+
+/* *** media screen phone:550px *** */
+@media screen and (max-width : 550px) {
+    div.title {
+        margin-bottom: 1.5rem;
+        min-width: calc(23rem + 22vw);
+    }
+
+    div.title p {
+        font-size: calc(1rem + 1vw);
+    }
+
+    div.title,
+    div.title span ,   div.email,div.call  {
+        height: 5vh;
+    }
+
+    div.logo {
+        min-width: calc(9rem + 11vw);
+        height: 18vh;
+    }
+
+    div.email p,
+    div.call p {
+        font-size: calc(1.3rem - 0.6667vw);
+        min-width: calc(9rem + 11vw);
+    }
+    section.techno-about {
+        margin: 0;
+        padding: 2rem 1.6rem;
+    }
+
+    section.test {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+
+    section.techno-coming {
+        margin-top: 1rem;
+    }
+
+    section.techno-about::before {
+        right: 0rem;
+    }
+
+    section.techno-about::after {
+        bottom: -13rem;
+        left: -1.5rem;
+        
+    }
+}
